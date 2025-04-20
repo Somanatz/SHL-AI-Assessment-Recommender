@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+sentence-transformers
+streamlit
+beautifulsoup4
+requests
