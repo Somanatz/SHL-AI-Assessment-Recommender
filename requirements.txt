@@ -7,3 +7,5 @@ streamlit
 beautifulsoup4
 requests
 numpy
+torch==2.0.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
