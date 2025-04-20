@@ -7,7 +7,7 @@ import numpy as np
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Load and embed the catalog
-def load_catalog(path='Web_Scrap_Scr\shl_product_catalog_combined.csv'):
+def load_catalog(path='shl_product_catalog_combined.csv'):
     df = pd.read_csv(path)
     catalog_texts = df['title'].fillna('') + " " + df['test_types'].fillna('') + " " + df['description'].fillna('')
     embeddings = model.encode(catalog_texts.tolist(), show_progress_bar=True)
